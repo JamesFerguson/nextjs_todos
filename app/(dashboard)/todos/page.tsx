@@ -1,5 +1,5 @@
 const TodosPage = () => {
-    return <div>todos</div>
-}
+  return <div>todos</div>;
+};
 
-export default TodosPage
+export default TodosPage;

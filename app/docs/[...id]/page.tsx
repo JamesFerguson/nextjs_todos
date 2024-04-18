@@ -1,5 +1,10 @@
-const DocsIdPage = ({params}) => {
-    return <div>docs {params.id.join(', ')}</div>
-}
+type Props = {
+  params: { id: string[] | undefined  };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
 
-export default DocsIdPage
+const DocsIdPage = ({ params }: Props) => {
+  return <div>docs {typeof params.id === "undefined" ? '' : params.id.join(", ")}</div>;
+};
+
+export default DocsIdPage;
